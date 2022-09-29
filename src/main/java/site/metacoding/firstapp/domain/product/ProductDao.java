@@ -9,11 +9,11 @@ public interface ProductDao {
 
     public void insert();
 
-    public Product findById();
+    public Product findById(Integer productId);
 
     public void insert(Product product);
 
-    public void update(@Param("productId") Integer productiId, @Param("product") Product product);
+    public void update(@Param("productId") Integer productId, @Param("product") Product product);
 
     public void deleteById(Integer productId);
 
