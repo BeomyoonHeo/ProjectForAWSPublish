@@ -11,10 +11,11 @@ public interface ProductDao {
 
     public Product findById(Integer productId);
 
-    public void insert(Product product);
+    // PrepareStatement
+    public int insert(Product product);
 
-    public void update(@Param("productId") Integer productId, @Param("product") Product product);
+    public int update(Product product);
 
-    public void deleteById(Integer productId);
+    public int deleteById(Integer productId);
 
 }
